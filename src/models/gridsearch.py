@@ -5,8 +5,8 @@ import joblib
 from sklearn.linear_model import ElasticNet
 from sklearn.model_selection import GridSearchCV
 
-DATA_DIR = "examen-dvc/data/processed_data"
-OUT_DIR = "examen-dvc/models"
+DATA_DIR = "data/processed_data"
+OUT_DIR = "models"
 BEST_PARAMS_PATH = os.path.join(OUT_DIR, "best_params.pkl")
 
 def main():

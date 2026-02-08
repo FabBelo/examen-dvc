@@ -3,13 +3,13 @@ import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import joblib
 
-IN_DIR = "examen-dvc/data/processed_data"
-OUT_DIR = "examen-dvc/data/processed_data"
-SCALER_PATH = "examen-dvc/models/scaler.pkl"
+IN_DIR = "data/processed_data"
+OUT_DIR = "data/processed_data"
+SCALER_PATH = "models/scaler.pkl"
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
-    os.makedirs("examen-dvc/models", exist_ok=True)
+    os.makedirs("models", exist_ok=True)
 
     X_train = pd.read_csv(os.path.join(IN_DIR, "X_train.csv"))
     X_test = pd.read_csv(os.path.join(IN_DIR, "X_test.csv"))

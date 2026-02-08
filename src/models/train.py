@@ -4,8 +4,8 @@ import joblib
 
 from sklearn.linear_model import ElasticNet
 
-DATA_DIR = "examen-dvc/data/processed_data"
-MODELS_DIR = "examen-dvc/models"
+DATA_DIR = "data/processed_data"
+MODELS_DIR = "models"
 
 BEST_PARAMS_PATH = os.path.join(MODELS_DIR, "best_params.pkl")
 MODEL_PATH = os.path.join(MODELS_DIR, "elasticnet_model.pkl")

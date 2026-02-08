@@ -5,10 +5,10 @@ import joblib
 
 from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
 
-DATA_DIR = "examen-dvc/data/processed_data"
-RAW_DIR = "examen-dvc/data"
-MODELS_DIR = "examen-dvc/models"
-METRICS_DIR = "examen-dvc/metrics"
+DATA_DIR = "data/processed_data"
+RAW_DIR = "data"
+MODELS_DIR = "models"
+METRICS_DIR = "metrics"
 
 MODEL_PATH = os.path.join(MODELS_DIR, "elasticnet_model.pkl")
 PRED_PATH = os.path.join(RAW_DIR, "predictions.csv")

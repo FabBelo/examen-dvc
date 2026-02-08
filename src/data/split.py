@@ -2,8 +2,8 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-RAW_PATH = "examen-dvc/data/raw_data/raw.csv"
-OUT_DIR = "examen-dvc/data/processed_data"
+RAW_PATH = "data/raw_data/raw.csv"
+OUT_DIR = "data/processed_data"
 TARGET_COL = "silica_concentrate"
 
 def main(test_size: float = 0.2, random_state: int = 42):
